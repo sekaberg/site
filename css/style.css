@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../res/test/maximalfocus.jpg);
+    /*background-color: rgb(120, 120, 120);*/
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#title {
+    color: white;
+    margin: auto auto;
+
+    text-align: center;
+
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+.topp_bar {
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 10px;
+    size: fill;
+}
+
+.topp_bar a {
+    color: white;
+    margin: 20px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 160%;
+}
+
+.topp_bar a.not_selected {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 666px) {
+    
+}
