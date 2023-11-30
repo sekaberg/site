@@ -1,6 +1,7 @@
 :root {
     --border-radius: 15px;
-    
+
+    --backfade-color: rgba(100, 100, 100, 0.8);
     --highlight_color_a: rgba(218, 215, 37, 0.8);
     --highlight_color_b: rgba(155, 218, 37, 0.8);
 }
@@ -31,18 +32,19 @@ body::-webkit-scrollbar {
 
     text-align: center;
 
-    font-size: 300%;
+    font-size: 400%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
 
 .topp_bar {
-    background-color: rgba(100, 100, 100, 0.8);
+    background-color: var(--backfade-color);
     border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 20px;
     size: fill;
 }
-
 .topp_bar a {
     background-color: var(--highlight_color_b);
     padding: 10px;
@@ -55,10 +57,17 @@ body::-webkit-scrollbar {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 160%;
 }
-
 .topp_bar a.not_selected {
     background-color: var(--highlight_color_a);
     text-decoration: none;
+}
+
+
+.container {
+    background-color: var(--backfade-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 20px;
 }
 
 
