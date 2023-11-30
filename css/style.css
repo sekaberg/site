@@ -1,3 +1,10 @@
+:root {
+    --border-radius: 15px;
+    
+    --highlight_color_a: rgba(218, 215, 37, 0.8);
+    --highlight_color_b: rgba(155, 218, 37, 0.8);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,19 +39,25 @@ body::-webkit-scrollbar {
 
 .topp_bar {
     background-color: rgba(100, 100, 100, 0.8);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     size: fill;
 }
 
 .topp_bar a {
+    background-color: var(--highlight_color_b);
+    padding: 10px;
+    border-radius: var(--border-radius);
+
     color: white;
-    margin: 20px;
+    display: inline-flex;
+    margin: 10px;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 160%;
 }
 
 .topp_bar a.not_selected {
+    background-color: var(--highlight_color_a);
     text-decoration: none;
 }
 
