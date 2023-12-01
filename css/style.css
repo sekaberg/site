@@ -70,6 +70,36 @@ body::-webkit-scrollbar {
     margin: 20px;
 }
 
+.download_item {
+    border: 2px solid var(--highlight_color_b);
+    border-radius: var(--border-radius);
+    margin: 20px auto 10px auto;
+    width: 50%;
+}
+.download_item h2 {
+    color: white;
+    margin: auto auto;
+
+    text-align: center;
+
+    font-size: 150%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.download_item a {
+    background-color: var(--highlight_color_a);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    padding: 10px;
+
+    color: white;
+    display: inline-flex;
+    margin: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
 
 @media screen and (max-width: 666px) {
     
